@@ -4,10 +4,20 @@ return {
     opts = {
       picker = {
         sources = {
+          files = {
+            hidden = true,
+            ignored = true,
+            exclude = { ".git", ".DS_Store", "node_modules", "dist", "build" },
+          },
+          grep = {
+            hidden = true,
+            ignored = true,
+            exclude = { ".git", ".DS_Store", "node_modules", "dist", "build" },
+          },
           explorer = {
-            hidden = true, -- Show hidden files (like .env and .gitignore)
-            ignored = true, -- Show gitignored files
-            exclude = { ".git", ".DS_Store" }, -- Specifically hide these
+            hidden = true,
+            ignored = true,
+            exclude = { ".git", ".DS_Store" },
           },
         },
       },
