@@ -3,3 +3,5 @@
 -- Add any additional options here
 vim.g.python3_host_prog = vim.fn.expand("~/.neovim-venv/bin/python")
 vim.opt.wrap = true
+
+vim.g.root_spec = { ".git", "lsp", "cwd" }
